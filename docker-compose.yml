@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  streamlit-app:
+    build:
+      context: ./streamlit
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./uploaded_pdfs:/app/uploaded_pdfs
+
+  fastapi-server:
+    build:
+      context: ./fastapi
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./uploaded_pdfs:/app/uploaded_pdfs
+    env_file:
+      - ./.env
