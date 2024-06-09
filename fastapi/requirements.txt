@@ -1,7 +1,0 @@
-fastapi
-pydantic
-uvicorn
-openai
-pymupdf
-slack-sdk
-python-dotenv
