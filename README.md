@@ -33,4 +33,5 @@ Go to Apps Section on left side -> Click on dropdown -> Click Add this app on a 
 
 ### 5. Python code for sending text to slack
 You can send the text to slack via below python code.
+
 ![image](https://github.com/grabbysingh/assignment/assets/32235433/e31edda4-a7b9-4825-9916-32e6525eb33c)
